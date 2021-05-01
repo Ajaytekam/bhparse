@@ -6,6 +6,8 @@ CYAN='\033[0;36m'
 END='\033[0m'
 
 echo -e "${YELLOW}[+]${GREEN} bhparse installer...${END}" 
+# install requirements 
+pip3 install -r requirements.txt 
 mkdir -p ~/tools 
 cp bhparse.py ~/tools  
 cd ~/tools 
